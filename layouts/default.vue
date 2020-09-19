@@ -50,7 +50,11 @@
       dense
       hide-shadow
     >
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title>
+        <nuxt-link to="/" tag="span" style="cursor: pointer">
+          {{ appTitle }}
+        </nuxt-link>
+      </v-toolbar-title>
       <v-spacer />
       <v-toolbar-items class="hidden-sm-and-down">
         <v-switch
@@ -58,7 +62,7 @@
           hide-details
           inset
           dense
-          style="align-items: center"
+          class="align-center"
         />
         <v-btn
           v-for="(item, i) in routes"
