@@ -76,11 +76,37 @@ export default {
         { title: 'Exports', path: '/exports' },
         { title: 'Contact', path: '/contact' }
       ],
-      title: 'Aura LaserFab'
+      appTitle: 'Aura LaserFab'
     }
   }
 }
 </script>
 
 <style lang="scss">
+#appBar {
+  background-color: transparent;
+}
+.v-toolbar .v-btn--active:hover, .v-toolbar .v-btn--active::before {
+  background-color: #ff8040;
+}
+.v-toolbar .v-btn:hover {
+  background-color: #ff8040;
+}
+// #appBar.theme--dark.v-app-bar--is-scrolled {
+//   background-color:rgba(223, 12, 12, 0.9);
+// }
+#appBar.v-app-bar--is-scrolled {
+  background-color:rgba(66, 66, 66, .9);
+}
+.v-input--switch {
+  font-family: 'Material Icons';
+}
+.theme--dark.v-input--switch .v-input--switch__thumb:before {
+  content: 'brightness_4';
+  color: rgba(255, 255, 255, .87) !important;
+}
+.theme--light.v-input--switch .v-input--switch__thumb:before {
+  content: 'brightness_4';
+  color: rgba(0, 0, 0, .87) !important;
+}
 </style>
