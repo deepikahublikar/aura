@@ -48,7 +48,6 @@
       elevate-on-scroll
       app
       dense
-      hide-shadow
     >
       <v-toolbar-title>
         <nuxt-link to="/" tag="span" style="cursor: pointer">
