@@ -4,7 +4,9 @@
 
 <script>
 export default {
-
+  head () {
+    return { title: 'Contact Us' }
+  }
 }
 </script>
 
