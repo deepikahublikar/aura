@@ -6,16 +6,39 @@
       right
       app
     >
-      <v-list>
+      <div
+        class="d-flex justify-space-between align-center"
+      >
+        <div
+          style="margin-left: 5px"
+        >
+          Dark Theme
+        </div>
+        <div>
+          <v-switch
+            v-model="$vuetify.theme.dark"
+            inset
+            dense
+          />
+        </div>
+      </div>
+      <v-divider />
+      <v-list
+        style="height: 90%"
+        class="d-flex flex-column align-center"
+      >
         <v-list-item
           v-for="(item, i) in routes"
           :key="i"
           :to="item.path"
+          style="width: 100%"
           router
           exact
         >
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+          <v-list-item-content
+            class="justify-center"
+          >
+            {{ item.title }}
           </v-list-item-content>
         </v-list-item>
       </v-list>
