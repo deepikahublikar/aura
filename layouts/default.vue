@@ -109,20 +109,23 @@ export default {
 </script>
 
 <style lang="scss">
+
 #appBar {
   background-color: transparent;
 }
 .v-toolbar .v-btn--active:hover, .v-toolbar .v-btn--active::before {
-  background-color: #ff8040;
+  opacity: 1;
+  border-bottom: 5px solid var(--v-primary-base);
+  background-color: transparent;
 }
 .v-toolbar .v-btn:hover {
-  background-color: #ff8040;
+  background-color: var(--v-primary-base);
 }
 // #appBar.theme--dark.v-app-bar--is-scrolled {
 //   background-color:rgba(223, 12, 12, 0.9);
 // }
 #appBar.v-app-bar--is-scrolled {
-  background-color:rgba(66, 66, 66, .9);
+  background-color:rgba(202, 202, 202, 0.9);
 }
 .v-input--switch {
   font-family: 'Material Icons';
