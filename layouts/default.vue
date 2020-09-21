@@ -1,11 +1,13 @@
 <template>
   <v-app dark>
+    <!-- navigation sidebar/drawer start -->
     <v-navigation-drawer
       v-model="drawer"
       temporary
       right
       app
     >
+      <!-- theme switcher -->
       <div
         class="d-flex justify-space-between align-center"
       >
@@ -23,6 +25,7 @@
         </div>
       </div>
       <v-divider />
+      <!-- navigation list -->
       <v-list
         style="height: 90%"
         class="d-flex flex-column align-center"
@@ -43,18 +46,22 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    <!-- navigation sidebar/drawer end -->
+    <!-- top app navigation bar start -->
     <v-app-bar
       id="appBar"
       elevate-on-scroll
       app
       dense
     >
+      <!-- app logo/title -->
       <v-toolbar-title>
         <nuxt-link to="/" tag="span" style="cursor: pointer">
           {{ appTitle }}
         </nuxt-link>
       </v-toolbar-title>
       <v-spacer />
+      <!-- navbar links -->
       <v-toolbar-items class="hidden-sm-and-down">
         <v-switch
           v-model="$vuetify.theme.dark"
@@ -73,8 +80,10 @@
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
+      <!-- drawer open close button -->
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer" />
     </v-app-bar>
+    <!-- top app navbar end -->
     <v-main>
       <v-container>
         <nuxt />
