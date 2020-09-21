@@ -122,14 +122,32 @@ export default {
         { title: 'Exports', path: '/exports' },
         { title: 'Contact', path: '/contact' }
       ],
-      appTitle: 'Aura LaserFab'
+      appTitle: 'Aura'
     }
   }
 }
 </script>
 
 <style lang="scss">
-
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.v-main {
+  padding: 0 0 0 0;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  // width: 100%;
+}
 #appBar {
   background-color: transparent;
 }
