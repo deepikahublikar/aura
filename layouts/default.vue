@@ -7,12 +7,20 @@
       right
       app
     >
+      <!-- logo and title -->
+      <nuxt-link to="/" tag="span" style="cursor: pointer">
+        <div class="logo d-flex justify-center align-center" style="color:blue;padding:5px">
+          <img width="36px" src="~/assets/images/aura_logo.png" alt="aura-logo" >
+          <span style="padding-left: 10px;font-family: serif;font-size:1.25rem">{{ appTitle }}</span>
+        </div>
+      </nuxt-link>
+      <v-divider />
       <!-- theme switcher -->
       <div
         class="d-flex justify-space-between align-center"
       >
         <div
-          style="margin-left: 5px"
+          style="margin-left: 5px; font-size:12px;"
         >
           Dark Theme
         </div>
