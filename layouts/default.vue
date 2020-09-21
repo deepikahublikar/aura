@@ -65,7 +65,10 @@
       <!-- app logo/title -->
       <v-toolbar-title>
         <nuxt-link to="/" tag="span" style="cursor: pointer">
-          {{ appTitle }}
+          <div class="logo" style="display:flex; align-items:center; color:blue;">
+            <img width="36px" src="~/assets/images/aura_logo.png" alt="aura-logo" >
+            <span style="padding-left: 10px;font-family: serif;">{{ appTitle }}</span>
+          </div>
         </nuxt-link>
       </v-toolbar-title>
       <v-spacer />
