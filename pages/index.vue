@@ -1,75 +1,11 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/about"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <div>
+    <main-carousel />
+    <h1>Welcome</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, perspiciatis saepe earum, deserunt at quae unde repellendus iusto vel explicabo nam nulla ipsum mollitia repudiandae dolor fuga deleniti voluptates repellat quod in reiciendis libero? Optio consectetur debitis quia. Reiciendis expedita nemo veritatis maiores vero, amet commodi sunt odit nostrum inventore itaque labore et corrupti omnis. Fugit est corrupti commodi, facilis deleniti omnis assumenda possimus velit odit dolor qui architecto alias tempora magnam impedit magni molestias deserunt ducimus, earum excepturi autem! Consequuntur enim eius velit ipsum magnam obcaecati fugiat, quas beatae quibusdam sapiente. Mollitia optio totam facere aperiam, ut voluptas expedita quod deleniti at excepturi dolore nam harum suscipit natus necessitatibus itaque sunt hic repellendus quisquam esse laboriosam saepe. Praesentium aliquam, distinctio, ipsum illo suscipit numquam ipsa culpa sapiente itaque nostrum harum nesciunt minus libero saepe iusto consequuntur quisquam maxime! Suscipit voluptatibus in quisquam tenetur dolorem. Quo ex in placeat architecto a illo vel minima velit, dicta commodi, repellat, eius eaque eos accusamus! Distinctio saepe, necessitatibus cumque nesciunt quod atque temporibus ut, accusantium provident quasi possimus, ipsum voluptate itaque similique autem iste nobis officiis! Illo a enim laboriosam optio. Dolorum molestias ipsam distinctio illum adipisci id consequuntur temporibus! Qui distinctio expedita libero amet cumque repellat, temporibus eum autem ea veritatis odit praesentium a repellendus beatae quibusdam sit illo dignissimos magni reiciendis. Optio, nam expedita ratione autem fugit debitis a sapiente ipsum eum illum voluptas cupiditate at mollitia nesciunt error sint possimus nobis? Deserunt aut, eius quis odit nisi reiciendis placeat atque consequuntur obcaecati temporibus fugiat, perspiciatis autem, beatae possimus voluptatibus. Veniam odio, ut, distinctio laboriosam mollitia earum voluptate illum, ullam numquam et libero impedit magnam esse error aliquid perferendis iusto sunt quis neque molestias nisi? Harum, libero molestias tempore a explicabo mollitia commodi vel nisi id sint sapiente excepturi voluptates, adipisci ab cum saepe quia quidem voluptate? Sit, sequi porro qui eius voluptas vero, id ducimus soluta repudiandae quae, maiores quod quaerat odit magnam. Asperiores, rem doloremque. Neque saepe repudiandae ullam illum animi eius adipisci recusandae est. Explicabo vitae repudiandae deserunt exercitationem, nihil cum repellendus ab dolores totam eum perferendis porro iure aperiam ipsam aut aliquam veritatis quia, cupiditate temporibus minus nam, vero consequuntur? Ullam voluptates fugit, officia doloribus doloremque voluptatum dolores autem adipisci porro nobis accusamus ipsam iste aspernatur et, quae non. Repudiandae fuga reprehenderit iusto maxime doloremque quas officiis nemo, earum quibusdam saepe soluta quaerat provident nostrum ut assumenda qui ipsa at quis libero perspiciatis nisi tempora minima, voluptatem magni? Sequi voluptas magni nostrum soluta laboriosam consequatur tempore accusamus quos animi dolor, quasi nemo. Nobis magnam aspernatur sequi aliquam, expedita veniam. Minus, esse nulla maiores nisi doloribus amet, ut harum adipisci, cumque nemo cum rerum expedita consequatur natus molestias quod iure voluptate sequi enim quam dolores. Expedita culpa voluptas deleniti modi. Itaque praesentium consequatur nulla tenetur aspernatur enim dolorem cum, voluptatem laudantium odio animi beatae tempore, quis ab nihil temporibus cumque sint ex assumenda, voluptate officia! Minus fugiat, veniam laudantium quos nesciunt tempore quas id vitae hic, perferendis pariatur!
+    </p>
+  </div>
 </template>
 
 <script>
