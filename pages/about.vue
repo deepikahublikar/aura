@@ -24,9 +24,7 @@
 <script>
 export default {
   head () {
-    return {
-      title: 'About'
-    }
+    return { title: 'About' }
   }
 }
 </script>
