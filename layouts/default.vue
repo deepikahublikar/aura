@@ -1,16 +1,26 @@
 <template>
   <v-app dark>
+    <!-- navigation sidebar/drawer start -->
     <v-navigation-drawer
       v-model="drawer"
       temporary
       right
       app
     >
+      <!-- logo and title -->
+      <nuxt-link to="/" tag="span" style="cursor: pointer">
+        <div class="logo d-flex justify-center align-center" style="color:blue;padding:5px">
+          <img width="36px" src="~/assets/images/aura_logo.png" alt="aura-logo" >
+          <span style="padding-left: 10px;font-family: serif;font-size:1.25rem">{{ appTitle }}</span>
+        </div>
+      </nuxt-link>
+      <v-divider />
+      <!-- theme switcher -->
       <div
         class="d-flex justify-space-between align-center"
       >
         <div
-          style="margin-left: 5px"
+          style="margin-left: 5px; font-size:12px;"
         >
           Dark Theme
         </div>
@@ -23,6 +33,7 @@
         </div>
       </div>
       <v-divider />
+      <!-- navigation list -->
       <v-list
         style="height: 90%"
         class="d-flex flex-column align-center"
@@ -43,18 +54,25 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    <!-- navigation sidebar/drawer end -->
+    <!-- top app navigation bar start -->
     <v-app-bar
       id="appBar"
       elevate-on-scroll
       app
       dense
     >
+      <!-- app logo/title -->
       <v-toolbar-title>
         <nuxt-link to="/" tag="span" style="cursor: pointer">
-          {{ appTitle }}
+          <div class="logo" style="display:flex; align-items:center; color:blue;">
+            <img width="36px" src="~/assets/images/aura_logo.png" alt="aura-logo" >
+            <span style="padding-left: 10px;font-family: serif;">{{ appTitle }}</span>
+          </div>
         </nuxt-link>
       </v-toolbar-title>
       <v-spacer />
+      <!-- navbar links -->
       <v-toolbar-items class="hidden-sm-and-down">
         <v-switch
           v-model="$vuetify.theme.dark"
@@ -73,8 +91,10 @@
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
+      <!-- drawer open close button -->
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer" />
     </v-app-bar>
+    <!-- top app navbar end -->
     <v-main>
       <v-container>
         <nuxt />
@@ -102,14 +122,32 @@ export default {
         { title: 'Exports', path: '/exports' },
         { title: 'Contact', path: '/contact' }
       ],
-      appTitle: 'Aura LaserFab'
+      appTitle: 'Aura'
     }
   }
 }
 </script>
 
 <style lang="scss">
-
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.v-main {
+  padding: 0 0 0 0;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  // width: 100%;
+}
 #appBar {
   background-color: transparent;
 }
