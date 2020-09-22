@@ -5,19 +5,14 @@
     align-center
     style="width: 100%; padding: 0; margin: 0"
   >
+    <slim-carousel />
     <v-flex
       xs12
       sm8
       md6
     >
-      About Page
+      <h1>About Page</h1>
     </v-flex>
-    <div
-      style="width: 100%; padding: 0; margin: 0"
-    >
-      <slim-carousel />
-    </div>
-    <!-- <carousel /> -->
   </v-layout>
 </template>
 
