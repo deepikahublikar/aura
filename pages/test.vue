@@ -14,20 +14,6 @@
       <div class="heading">
         <h1><p>About Aura LaserFab</p></h1>
       </div>
-      <style>
-        p::first-letter {
-        text-decoration: underline;
-        text-decoration-color: orange;
-        }
-        .heading {
-        font-weight: normal;
-        text-decoration-style: solid;
-        }
-        .textstyle {
-        font-weight: normal;
-        text-align: justify;
-        }
-      </style>
     </v-flex>
     <v-container class="white lighten-5">
       <v-row no-gutters>
@@ -123,3 +109,18 @@ export default {
   }
 }
 </script>
+
+<style>
+p::first-letter {
+text-decoration: underline;
+text-decoration-color: orange;
+}
+.heading {
+font-weight: normal;
+text-decoration-style: solid;
+}
+.textstyle {
+font-weight: normal;
+text-align: justify;
+}
+</style>
