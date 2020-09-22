@@ -1,8 +1,11 @@
 <template>
   <v-carousel
-    style="margin: 0; padding: 0; width: 100%;"
+    style="margin: 0; padding: 0; max-width: 1000px; max-height:440px"
     show-arrows-on-hover
     hide-delimiter-background
+    justify-center
+    align-center
+    cycle
   >
     <v-carousel-item
       v-for="(item, i) in images"
@@ -10,6 +13,8 @@
       :src="item.src"
       reverse-transition="fade-transition"
       transition="fade-transition"
+      style="background-size: 1000px 440px; max-height: 440px"
+      class="main-carousel"
     />
   </v-carousel>
 </template>
@@ -33,5 +38,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.main-carousel .v-image.v-responsive.v-carousel__item {
+  max-width: 1000px;
+  max-height: 440px;
+}
+.main-carousel .v-image__image--cover {
+  background-size: 1000px 440px;
+}
 </style>
