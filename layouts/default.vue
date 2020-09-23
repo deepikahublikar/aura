@@ -120,7 +120,8 @@ export default {
         { title: 'Services', path: '/services' },
         { title: 'Clients', path: '/Clients' },
         { title: 'Exports', path: '/exports' },
-        { title: 'Contact', path: '/contact' }
+        { title: 'Contact', path: '/contact' },
+        { title: 'test', path: '/test' }
       ],
       appTitle: 'Aura'
     }
