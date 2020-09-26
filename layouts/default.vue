@@ -81,15 +81,36 @@
           dense
           class="align-center"
         />
-        <v-btn
-          v-for="(item, i) in routes"
-          :key="i"
-          :to="item.path"
-          text
-          small
+        <v-list
+          class="d-flex align-center justify-center"
         >
-          {{ item.title }}
-        </v-btn>
+          <v-list-item
+            v-for="(item, i) in routes"
+            :key="i"
+            :to="item.path"
+            :ripple="false"
+          >
+            <v-menu v-if="item.menu" open-on-hover offset-y>
+              <template v-slot:activator="{ on }">
+                <v-btn
+                  text
+                  tile
+                  small
+                  v-on="on"
+                >
+                  {{ item.title }}
+                </v-btn>
+              </template>
+              <v-list>
+                <v-list-item>aaaaaaaaaa</v-list-item>
+                <v-list-item>bbbbbbbbbb</v-list-item>
+              </v-list>
+            </v-menu>
+            <v-btn v-else text tile small>
+              {{ item.title }}
+            </v-btn>
+          </v-list-item>
+        </v-list>
       </v-toolbar-items>
       <!-- drawer open close button -->
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer" />
@@ -149,20 +170,44 @@ body {
   justify-self: center;
   // width: 100%;
 }
-#appBar {
+.v-toolbar,
+.v-toolbar .v-list,
+.v-toolbar .v-list-item {
+  background-color: transparent;
+  padding: 0;
+}
+.v-toolbar .v-btn:before,
+.v-toolbar .v-btn:hover,
+.v-toolbar .v-btn--active:hover,
+.v-toolbar .v-btn--active:before {
   background-color: transparent;
 }
-.v-toolbar .v-btn--active:hover, .v-toolbar .v-btn--active::before {
+.v-toolbar .v-btn,
+.v-toolbar .v-btn:before {
+  min-height: 48px;
+}
+
+.v-toolbar .v-list-item--link,
+.v-navigation-drawer .v-list-item--link {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.v-toolbar .v-btn--active:hover,
+.v-toolbar .v-btn--active:before,
+.v-toolbar .v-list-item--active:before {
   opacity: 1;
   border-bottom: 5px solid var(--v-primary-base);
   background-color: transparent;
 }
-.v-toolbar .v-btn:hover {
+.v-toolbar .v-btn:hover,
+.v-toolbar .v-list-item:hover {
   background-color: var(--v-primary-base);
 }
-// #appBar.theme--dark.v-app-bar--is-scrolled {
-//   background-color:rgba(223, 12, 12, 0.9);
-// }
+.v-toolbar .v-list {
+  background-color: transparent;
+}
+
 #appBar.v-app-bar--is-scrolled {
   background-color:rgba(202, 202, 202, 0.9);
 }
