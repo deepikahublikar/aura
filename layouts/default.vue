@@ -134,17 +134,25 @@
 export default {
   data () {
     return {
+      appTitle: 'Aura',
       drawer: false,
       routes: [
         { title: 'Home', path: '/' },
         { title: 'About', path: '/about' },
-        { title: 'Services', path: '/services' },
-        { title: 'Clients', path: '/Clients' },
+        { title: 'Services', path: '/services', menu: true, submenu: 'serviceRoutes' },
+        { title: 'Clients', path: '/clients' },
         { title: 'Exports', path: '/exports' },
         { title: 'Contact', path: '/contact' },
         { title: 'test', path: '/test' }
       ],
-      appTitle: 'Aura'
+      servicesRoutes: [
+        { title: 'CNC Laser Cutting', path: '/services/CNC_laser_cutting' },
+        { title: 'CNC Plasma Cutting', path: '/services/CNC_plasma_cutting' },
+        { title: 'CNC Bending', path: '/services/CNC_bending' },
+        { title: 'CNC Rolling', path: '/services/CNC_rolling' },
+        { title: 'Metal Fabrication', path: '/services/metal_fabrication' },
+        { title: 'Surface Treatment', path: '/services/surface_treatment' }
+      ]
     }
   }
 }
