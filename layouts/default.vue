@@ -90,7 +90,7 @@
             :to="item.path"
             :ripple="false"
           >
-            <v-menu v-if="item.menu" open-on-hover offset-y>
+            <v-menu v-if="item.menu" open-on-hover offset-y rounded="0">
               <template v-slot:activator="{ on }">
                 <v-btn
                   text
