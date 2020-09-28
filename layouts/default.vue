@@ -39,9 +39,9 @@
         class="d-flex flex-column align-center"
       >
         <v-list-item
-          v-for="(item, i) in routes"
+          v-for="(route, i) in routes"
           :key="i"
-          :to="item.path"
+          :to="route.path"
           style="width: 100%"
           router
           exact
@@ -49,7 +49,7 @@
           <v-list-item-content
             class="justify-center"
           >
-            {{ item.title }}
+            {{ route.title }}
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -85,12 +85,12 @@
           class="d-flex align-center justify-center"
         >
           <v-list-item
-            v-for="(item, i) in routes"
+            v-for="(route, i) in routes"
             :key="i"
-            :to="item.path"
+            :to="route.path"
             :ripple="false"
           >
-            <v-menu v-if="item.menu" open-on-hover offset-y rounded="0">
+            <v-menu v-if="route.menu" open-on-hover offset-y rounded="0">
               <template v-slot:activator="{ on }">
                 <v-btn
                   text
@@ -98,7 +98,7 @@
                   small
                   v-on="on"
                 >
-                  {{ item.title }}
+                  {{ route.title }}
                 </v-btn>
               </template>
               <v-list>
@@ -107,7 +107,7 @@
               </v-list>
             </v-menu>
             <v-btn v-else text tile small>
-              {{ item.title }}
+              {{ route.title }}
             </v-btn>
           </v-list-item>
         </v-list>
