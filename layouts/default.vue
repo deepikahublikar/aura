@@ -102,8 +102,15 @@
                 </v-btn>
               </template>
               <v-list>
-                <v-list-item>aaaaaaaaaa</v-list-item>
-                <v-list-item>bbbbbbbbbb</v-list-item>
+                <v-list-item
+                  v-for="(item, j) in route.submenu"
+                  :key="j"
+                  :to="item.path"
+                  router
+                  exact
+                >
+                  {{ item.title }}
+                </v-list-item>
               </v-list>
             </v-menu>
             <v-btn v-else text tile small>
@@ -133,25 +140,25 @@
 <script>
 export default {
   data () {
+    const servicesRoutes = [
+      { title: 'CNC Laser Cutting', path: '/services/CNC_laser_cutting' },
+      { title: 'CNC Plasma Cutting', path: '/services/CNC_plasma_cutting' },
+      { title: 'CNC Bending', path: '/services/CNC_bending' },
+      { title: 'CNC Rolling', path: '/services/CNC_rolling' },
+      { title: 'Metal Fabrication', path: '/services/metal_fabrication' },
+      { title: 'Surface Treatment', path: '/services/surface_treatment' }
+    ]
     return {
       appTitle: 'Aura',
       drawer: false,
       routes: [
         { title: 'Home', path: '/' },
         { title: 'About', path: '/about' },
-        { title: 'Services', path: '/services', menu: true, submenu: 'serviceRoutes' },
+        { title: 'Services', path: '/services', menu: true, submenu: servicesRoutes },
         { title: 'Clients', path: '/clients' },
         { title: 'Exports', path: '/exports' },
         { title: 'Contact', path: '/contact' },
         { title: 'test', path: '/test' }
-      ],
-      servicesRoutes: [
-        { title: 'CNC Laser Cutting', path: '/services/CNC_laser_cutting' },
-        { title: 'CNC Plasma Cutting', path: '/services/CNC_plasma_cutting' },
-        { title: 'CNC Bending', path: '/services/CNC_bending' },
-        { title: 'CNC Rolling', path: '/services/CNC_rolling' },
-        { title: 'Metal Fabrication', path: '/services/metal_fabrication' },
-        { title: 'Surface Treatment', path: '/services/surface_treatment' }
       ]
     }
   }
