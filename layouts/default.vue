@@ -230,16 +230,23 @@ body {
   background-color: transparent;
 }
 .v-toolbar .v-list-item--active .v-btn__content,
-.v-navigation-drawer .v-list-item--active .v-list-item__content {
+.v-navigation-drawer .v-list-item--active,
+.v-menu__content .v-list-item--active {
   color: var(--v-primary-base);
 }
 // navbar links hover event
 .v-toolbar .v-list-item:hover,
-.v-navigation-drawer .v-list-item--link:hover  {
+.v-navigation-drawer .v-list-item--link:hover,
+.v-menu__content .v-list-item--link:hover {
   background-color: var(--v-primary-base);
 }
 .v-toolbar .v-btn:hover .v-btn__content,
-.v-navigation-drawer .v-list-item:hover .v-list-item__content {
+.v-navigation-drawer .v-list-item:hover .v-list-item__content,
+.v-menu__content .v-list a:hover {
+  color: white;
+}
+
+.v-menu__content .v-list-item--link:hover {
   color: white;
 }
 
