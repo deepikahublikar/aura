@@ -157,8 +157,7 @@ export default {
         { title: 'Services', path: '/services', menu: true, submenu: servicesRoutes },
         { title: 'Clients', path: '/clients' },
         { title: 'Exports', path: '/exports' },
-        { title: 'Contact', path: '/contact' },
-        { title: 'test', path: '/test' }
+        { title: 'Contact', path: '/contact' }
       ]
     }
   }
