@@ -105,8 +105,6 @@
         <v-row>
           <v-col cols="12">
             <v-row
-              :align="alignment"
-              :justify="justify"
               class="grey lighten-5"
               style="height: 300px;"
             >
@@ -117,7 +115,7 @@
                 <v-img
                   class="white--text align-end"
                   height="150px"
-                  src="~/assets/images/aura_logo.png"
+                  src="assets/images/leadership.jpg"
                 >
                   <v-card-title>
                     Leadership
