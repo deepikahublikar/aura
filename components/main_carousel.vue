@@ -1,6 +1,6 @@
 <template>
   <v-carousel
-    style="margin: 0; padding: 0; max-width: 1500px; max-height:340px"
+    style="margin: 0; padding: 0; max-width: 1000px; max-height:440px"
     show-arrows-on-hover
     hide-delimiter-background
     justify-center
@@ -13,7 +13,7 @@
       :src="item.src"
       reverse-transition="fade-transition"
       transition="fade-transition"
-      style="background-size: 1500px 340px; max-height: 340px"
+      style="background-size: 1000px 440px; max-height: 440px"
       class="main-carousel"
     />
   </v-carousel>
