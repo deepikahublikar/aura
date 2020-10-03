@@ -11,8 +11,8 @@
       v-for="(item, i) in images"
       :key="i"
       :src="item.src"
-      reverse-transition="fade-transition"
-      transition="fade-transition"
+      reverse-transition="scale-transition"
+      transition="scroll-x-reverse-transition"
       style="background-size: 1000px 440px; max-height: 440px"
       class="main-carousel"
     />
