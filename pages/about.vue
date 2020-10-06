@@ -186,208 +186,208 @@
         cost of their products.
       </div>
       <div class="container" style="display: flex; height: 100%;margin-top: 25px;">
-      <div
+        <div
           class="textstyle"
           style="width: 20%; text-align: justify;"
-      >
-      <v-card
-        class="mx-auto"
-        width="250"
-      >
-        <v-img
-          class="photo"
-          :src="require('~/assets/images/Unmesh.jpg')"
-        ></v-img>
-        <v-card-title>
-          Unmesh Mahajani
-        </v-card-title>
-        <v-card-subtitle>
-          Board of Director.
-        </v-card-subtitle>
-        <v-card-text>
-          B.E. (Mech) from NIT Durgapur.
-          35 years of experience in Mechanical/Production Engineering,
-          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-        </v-card-text>
-      </v-card>
-      </div>
-      <div
+        >
+          <v-card
+            class="mx-auto"
+            width="250"
+          >
+            <v-img
+              class="photo"
+              :src="require('~/assets/images/Unmesh.jpg')"
+            ></v-img>
+            <v-card-title>
+              Unmesh Mahajani
+            </v-card-title>
+            <v-card-subtitle>
+              Board of Director.
+            </v-card-subtitle>
+            <v-card-text>
+              B.E. (Mech) from NIT Durgapur.
+              35 years of experience in Mechanical/Production Engineering,
+              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+            </v-card-text>
+          </v-card>
+        </div>
+        <div
           class="textstyle"
           style="margin-left: 5%;"
-      >
-      <v-card
-        class="mx-auto"
-        width="250"
-      >
-        <v-img
-          class="photo"
-          :src="require('~/assets/images/Unmesh.jpg')"
-        ></v-img>
-        <v-card-title>
-          Abhay Paranjpe
-        </v-card-title>
-        <v-card-subtitle>
-          Board of Director.
-        </v-card-subtitle>
-        <v-card-text>
-          B.E. (Mech) from NIT Durgapur.
-          35 years of experience in Mechanical / Production Engineering,
-          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-        </v-card-text>
-      </v-card>
-      </div>
-      <div
+        >
+          <v-card
+            class="mx-auto"
+            width="250"
+          >
+            <v-img
+              class="photo"
+              :src="require('~/assets/images/Unmesh.jpg')"
+            ></v-img>
+            <v-card-title>
+              Abhay Paranjpe
+            </v-card-title>
+            <v-card-subtitle>
+              Board of Director.
+            </v-card-subtitle>
+            <v-card-text>
+              B.E. (Mech) from NIT Durgapur.
+              35 years of experience in Mechanical / Production Engineering,
+              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+            </v-card-text>
+          </v-card>
+        </div>
+        <div
           class="textstyle"
           style="margin-left: 5%;"
-      >
-      <v-card
-        class="mx-auto"
-        width="250"
-      >
-        <v-img
-          class="photo"
-          :src="require('~/assets/images/Unmesh.jpg')"
-        ></v-img>
-        <v-card-title>
-          Ananya Mahajani
-        </v-card-title>
-        <v-card-subtitle>
-          Board of Director.
-        </v-card-subtitle>
-        <v-card-text>
-          B.E. (Mech) from NIT Durgapur.
-          35 years of experience in Mechanical / Production Engineering,
-          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-        </v-card-text>
-      </v-card>
-      </div>
-      <div
+        >
+          <v-card
+            class="mx-auto"
+            width="250"
+          >
+            <v-img
+              class="photo"
+              :src="require('~/assets/images/Unmesh.jpg')"
+            ></v-img>
+            <v-card-title>
+              Ananya Mahajani
+            </v-card-title>
+            <v-card-subtitle>
+              Board of Director.
+            </v-card-subtitle>
+            <v-card-text>
+              B.E. (Mech) from NIT Durgapur.
+              35 years of experience in Mechanical / Production Engineering,
+              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+            </v-card-text>
+          </v-card>
+        </div>
+        <div
           class="textstyle"
           style="margin-left: 5%;"
-      >
-      <v-card
-        class="mx-auto"
-        width="250"
-      >
-        <v-img
-          class="photo"
-          :src="require('~/assets/images/Unmesh.jpg')"
-        ></v-img>
-        <v-card-title>
-          Vivek Peshwe
-        </v-card-title>
-        <v-card-subtitle>
-          Board of Director.
-        </v-card-subtitle>
-        <v-card-text>
-          B.E. (Mech) from NIT Durgapur.
-          35 years of experience in Mechanical / Production Engineering,
-          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-        </v-card-text>
-      </v-card>
-      </div>
+        >
+          <v-card
+            class="mx-auto"
+            width="250"
+          >
+            <v-img
+              class="photo"
+              :src="require('~/assets/images/Unmesh.jpg')"
+            ></v-img>
+            <v-card-title>
+              Vivek Peshwe
+            </v-card-title>
+            <v-card-subtitle>
+              Board of Director.
+            </v-card-subtitle>
+            <v-card-text>
+              B.E. (Mech) from NIT Durgapur.
+              35 years of experience in Mechanical / Production Engineering,
+              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+            </v-card-text>
+          </v-card>
+        </div>
       </div>
       <div class="container" style="display: flex; height: 100%;margin-top: 25px;">
-      <div
+        <div
           class="textstyle"
           style="width: 20%; text-align: justify;"
-      >
-      <v-card
-        class="mx-auto"
-        width="250"
-      >
-        <v-img
-          class="photo"
-          :src="require('~/assets/images/Unmesh.jpg')"
-        ></v-img>
-        <v-card-title>
-          Unmesh Mahajani
-        </v-card-title>
-        <v-card-subtitle>
-          Board of Director.
-        </v-card-subtitle>
-        <v-card-text>
-          B.E. (Mech) from NIT Durgapur.
-          35 years of experience in Mechanical/Production Engineering,
-          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-        </v-card-text>
-      </v-card>
-      </div>
-      <div
+        >
+          <v-card
+            class="mx-auto"
+            width="250"
+          >
+            <v-img
+              class="photo"
+              :src="require('~/assets/images/Unmesh.jpg')"
+            ></v-img>
+            <v-card-title>
+              Unmesh Mahajani
+            </v-card-title>
+            <v-card-subtitle>
+              Board of Director.
+            </v-card-subtitle>
+            <v-card-text>
+              B.E. (Mech) from NIT Durgapur.
+              35 years of experience in Mechanical/Production Engineering,
+              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+            </v-card-text>
+          </v-card>
+        </div>
+        <div
           class="textstyle"
           style="margin-left: 5%;"
-      >
-      <v-card
-        class="mx-auto"
-        width="250"
-      >
-        <v-img
-          class="photo"
-          :src="require('~/assets/images/Unmesh.jpg')"
-        ></v-img>
-        <v-card-title>
-          Abhay Paranjpe
-        </v-card-title>
-        <v-card-subtitle>
-          Board of Director.
-        </v-card-subtitle>
-        <v-card-text>
-          B.E. (Mech) from NIT Durgapur.
-          35 years of experience in Mechanical / Production Engineering,
-          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-        </v-card-text>
-      </v-card>
-      </div>
-      <div
+        >
+          <v-card
+            class="mx-auto"
+            width="250"
+          >
+            <v-img
+              class="photo"
+              :src="require('~/assets/images/Unmesh.jpg')"
+            ></v-img>
+            <v-card-title>
+              Abhay Paranjpe
+            </v-card-title>
+            <v-card-subtitle>
+              Board of Director.
+            </v-card-subtitle>
+            <v-card-text>
+              B.E. (Mech) from NIT Durgapur.
+              35 years of experience in Mechanical / Production Engineering,
+              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+            </v-card-text>
+          </v-card>
+        </div>
+        <div
           class="textstyle"
           style="margin-left: 5%;"
-      >
-      <v-card
-        class="mx-auto"
-        width="250"
-      >
-        <v-img
-          class="photo"
-          :src="require('~/assets/images/Unmesh.jpg')"
-        ></v-img>
-        <v-card-title>
-          Ananya Mahajani
-        </v-card-title>
-        <v-card-subtitle>
-          Board of Director.
-        </v-card-subtitle>
-        <v-card-text>
-          B.E. (Mech) from NIT Durgapur.
-          35 years of experience in Mechanical / Production Engineering,
-          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-        </v-card-text>
-      </v-card>
-      </div>
-      <div
+        >
+          <v-card
+            class="mx-auto"
+            width="250"
+          >
+            <v-img
+              class="photo"
+              :src="require('~/assets/images/Unmesh.jpg')"
+            ></v-img>
+            <v-card-title>
+              Ananya Mahajani
+            </v-card-title>
+            <v-card-subtitle>
+              Board of Director.
+            </v-card-subtitle>
+            <v-card-text>
+              B.E. (Mech) from NIT Durgapur.
+              35 years of experience in Mechanical / Production Engineering,
+              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+            </v-card-text>
+          </v-card>
+        </div>
+        <div
           class="textstyle"
           style="margin-left: 5%;"
-      >
-      <v-card
-        class="mx-auto"
-        width="250"
-      >
-        <v-img
-          class="photo"
-          :src="require('~/assets/images/Unmesh.jpg')"
-        ></v-img>
-        <v-card-title>
-          Vivek Peshwe
-        </v-card-title>
-        <v-card-subtitle>
-          Board of Director.
-        </v-card-subtitle>
-        <v-card-text>
-          B.E. (Mech) from NIT Durgapur.
-          35 years of experience in Mechanical / Production Engineering,
-          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-        </v-card-text>
-      </v-card>
-      </div>
+        >
+          <v-card
+            class="mx-auto"
+            width="250"
+          >
+            <v-img
+              class="photo"
+              :src="require('~/assets/images/Unmesh.jpg')"
+            ></v-img>
+            <v-card-title>
+              Vivek Peshwe
+            </v-card-title>
+            <v-card-subtitle>
+              Board of Director.
+            </v-card-subtitle>
+            <v-card-text>
+              B.E. (Mech) from NIT Durgapur.
+              35 years of experience in Mechanical / Production Engineering,
+              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+            </v-card-text>
+          </v-card>
+        </div>
       </div>
     </div>
   </v-layout>
