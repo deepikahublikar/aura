@@ -60,37 +60,82 @@
           :dense="$vuetify.breakpoint.smAndDown"
         >
           <v-timeline-item>
-            <span class="largefont" slot="opposite">Established in 2016</span>
-            <v-card class="elevation-2">
+            <span slot="opposite" class="largefont">Established in 2006</span>
+            <v-card class="elevation-2" width="80%">
               <v-card-title class="headline">
                 Incubation Plant Bhosri
               </v-card-title>
               <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                height="100px"
-              ></v-img>
-              <v-card-text>
-                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
-              </v-card-text>
+                class="center"
+                :src="require('~/assets/images/factory.jpg')"
+              >
+              </v-img>
+              <v-card-actions>
+                <v-btn
+                  color="orange lighten-2"
+                  text
+                >
+                  Explore
+                </v-btn>
+                <v-spacer />
+                <v-btn
+                  icon
+                  @click="show = !show"
+                >
+                  <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn>
+              </v-card-actions>
+              <v-expand-transition>
+                <div v-show="show">
+                  <v-divider />
+                  <v-card-text>
+                    Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
+                    scaevola imperdiet nec ut, sed euismod convenire principes at.
+                    Est et nobis iisque percipit, an vim zril disputando voluptatibus,
+                    vix an salutandi sententiae.
+                  </v-card-text>
+                </div>
+              </v-expand-transition>
             </v-card>
           </v-timeline-item>
           <v-timeline-item>
-            <span class="largefont" slot="opposite">Pune Plant</span>
-            <v-card class="elevation-2">
+            <span slot="opposite" class="largefont">Pune Plant 2010</span>
+            <v-card class="elevation-2" width="80%">
               <v-card-title class="headline">
-                Lorem ipsum
+                Started Factory at Shirwal
               </v-card-title>
               <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                height="200px"
-              ></v-img>
-              <v-card-text>
-                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
-              </v-card-text>
+                class="center"
+                :src="require('~/assets/images/factory.jpg')"
+              >
+              </v-img>
+              <v-card-actions>
+                <v-btn
+                  color="orange lighten-2"
+                  text
+                >
+                  Explore
+                </v-btn>
+                <v-spacer />
+                <v-btn
+                  icon
+                  @click="show = !show"
+                >
+                  <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn>
+              </v-card-actions>
+              <v-expand-transition>
+                <div v-show="show">
+                  <v-divider />
+                  <v-card-text>
+                    Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+                  </v-card-text>
+                </div>
+              </v-expand-transition>
             </v-card>
           </v-timeline-item>
           <v-timeline-item>
-            <span class="largefont" slot="opposite">Nashik Plant</span>
+            <span slot="opposite" class="largefont">Nashik Plant</span>
             <v-card class="elevation-2">
               <v-card-title class="headline">
                 Lorem ipsum
@@ -101,7 +146,7 @@
             </v-card>
           </v-timeline-item>
           <v-timeline-item>
-            <span class="largefont" slot="opposite">Established as a Brand</span>
+            <span slot="opposite" class="largefont">Established as a Brand</span>
             <v-card class="elevation-2">
               <v-card-title class="headline">
                 Lorem ipsum
@@ -112,7 +157,7 @@
             </v-card>
           </v-timeline-item>
           <v-timeline-item>
-            <span class="largefont" slot="opposite">Present & Future</span>
+            <span slot="opposite" class="largefont">Present & Future</span>
             <v-card class="elevation-2">
               <v-card-title class="headline">
                 Lorem ipsum
@@ -125,14 +170,224 @@
         </v-timeline>
       </div>
       <div class="heading">
-        <h1><p>Leadership</p></h1>
+        <h1><p>Our Team</p></h1>
+      </div>
+      <div
+        class="textstyle"
+        style="width: 100%; text-align: justify;"
+      >
+        Coming together is the beginning,
+        Staying together is progress, Working together is success.
+        A dedicated Product Development Team ensures the development of components
+        in the shortest possible time. With the use of advanced design softwares like
+        AutoCAD and Sigma Nest - we offer quick support during product development.
+        Aura Laser offers innovative Value Analysis And Value Engineering (VAVE) proposals
+        without affecting quality & durability of product directly helping customers reduce
+        cost of their products.
+      </div>
+      <div class="container" style="display: flex; height: 100%;margin-top: 25px;">
+      <div
+          class="textstyle"
+          style="width: 20%; text-align: justify;"
+      >
+      <v-card
+        class="mx-auto"
+        width="250"
+      >
+        <v-img
+          class="photo"
+          :src="require('~/assets/images/Unmesh.jpg')"
+        ></v-img>
+        <v-card-title>
+          Unmesh Mahajani
+        </v-card-title>
+        <v-card-subtitle>
+          Board of Director.
+        </v-card-subtitle>
+        <v-card-text>
+          B.E. (Mech) from NIT Durgapur.
+          35 years of experience in Mechanical/Production Engineering,
+          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+        </v-card-text>
+      </v-card>
       </div>
       <div
           class="textstyle"
-          style="width: 100%; text-align: justify;"
+          style="margin-left: 5%;"
       >
-        A dedicated Product Development Team ensures the development of components in the shortest possible time. With the use of advanced design softwares like AutoCAD and Sigma Nest - we offer quick support during product development.
-        Aura Laser offers innovative Value Analysis And Value Engineering (VAVE) proposals without affecting quality & durability of product directly helping customers reduce cost of their products.
+      <v-card
+        class="mx-auto"
+        width="250"
+      >
+        <v-img
+          class="photo"
+          :src="require('~/assets/images/Unmesh.jpg')"
+        ></v-img>
+        <v-card-title>
+          Abhay Paranjpe
+        </v-card-title>
+        <v-card-subtitle>
+          Board of Director.
+        </v-card-subtitle>
+        <v-card-text>
+          B.E. (Mech) from NIT Durgapur.
+          35 years of experience in Mechanical / Production Engineering,
+          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+        </v-card-text>
+      </v-card>
+      </div>
+      <div
+          class="textstyle"
+          style="margin-left: 5%;"
+      >
+      <v-card
+        class="mx-auto"
+        width="250"
+      >
+        <v-img
+          class="photo"
+          :src="require('~/assets/images/Unmesh.jpg')"
+        ></v-img>
+        <v-card-title>
+          Ananya Mahajani
+        </v-card-title>
+        <v-card-subtitle>
+          Board of Director.
+        </v-card-subtitle>
+        <v-card-text>
+          B.E. (Mech) from NIT Durgapur.
+          35 years of experience in Mechanical / Production Engineering,
+          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+        </v-card-text>
+      </v-card>
+      </div>
+      <div
+          class="textstyle"
+          style="margin-left: 5%;"
+      >
+      <v-card
+        class="mx-auto"
+        width="250"
+      >
+        <v-img
+          class="photo"
+          :src="require('~/assets/images/Unmesh.jpg')"
+        ></v-img>
+        <v-card-title>
+          Vivek Peshwe
+        </v-card-title>
+        <v-card-subtitle>
+          Board of Director.
+        </v-card-subtitle>
+        <v-card-text>
+          B.E. (Mech) from NIT Durgapur.
+          35 years of experience in Mechanical / Production Engineering,
+          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+        </v-card-text>
+      </v-card>
+      </div>
+      </div>
+      <div class="container" style="display: flex; height: 100%;margin-top: 25px;">
+      <div
+          class="textstyle"
+          style="width: 20%; text-align: justify;"
+      >
+      <v-card
+        class="mx-auto"
+        width="250"
+      >
+        <v-img
+          class="photo"
+          :src="require('~/assets/images/Unmesh.jpg')"
+        ></v-img>
+        <v-card-title>
+          Unmesh Mahajani
+        </v-card-title>
+        <v-card-subtitle>
+          Board of Director.
+        </v-card-subtitle>
+        <v-card-text>
+          B.E. (Mech) from NIT Durgapur.
+          35 years of experience in Mechanical/Production Engineering,
+          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+        </v-card-text>
+      </v-card>
+      </div>
+      <div
+          class="textstyle"
+          style="margin-left: 5%;"
+      >
+      <v-card
+        class="mx-auto"
+        width="250"
+      >
+        <v-img
+          class="photo"
+          :src="require('~/assets/images/Unmesh.jpg')"
+        ></v-img>
+        <v-card-title>
+          Abhay Paranjpe
+        </v-card-title>
+        <v-card-subtitle>
+          Board of Director.
+        </v-card-subtitle>
+        <v-card-text>
+          B.E. (Mech) from NIT Durgapur.
+          35 years of experience in Mechanical / Production Engineering,
+          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+        </v-card-text>
+      </v-card>
+      </div>
+      <div
+          class="textstyle"
+          style="margin-left: 5%;"
+      >
+      <v-card
+        class="mx-auto"
+        width="250"
+      >
+        <v-img
+          class="photo"
+          :src="require('~/assets/images/Unmesh.jpg')"
+        ></v-img>
+        <v-card-title>
+          Ananya Mahajani
+        </v-card-title>
+        <v-card-subtitle>
+          Board of Director.
+        </v-card-subtitle>
+        <v-card-text>
+          B.E. (Mech) from NIT Durgapur.
+          35 years of experience in Mechanical / Production Engineering,
+          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+        </v-card-text>
+      </v-card>
+      </div>
+      <div
+          class="textstyle"
+          style="margin-left: 5%;"
+      >
+      <v-card
+        class="mx-auto"
+        width="250"
+      >
+        <v-img
+          class="photo"
+          :src="require('~/assets/images/Unmesh.jpg')"
+        ></v-img>
+        <v-card-title>
+          Vivek Peshwe
+        </v-card-title>
+        <v-card-subtitle>
+          Board of Director.
+        </v-card-subtitle>
+        <v-card-text>
+          B.E. (Mech) from NIT Durgapur.
+          35 years of experience in Mechanical / Production Engineering,
+          Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+        </v-card-text>
+      </v-card>
+      </div>
       </div>
     </div>
   </v-layout>
@@ -140,9 +395,13 @@
 
 <script>
 export default {
+  data: () => ({
+    show: false
+  }),
   head () {
     return { title: 'About' }
   }
+
 }
 </script>
 <style>
@@ -167,5 +426,18 @@ export default {
           font-family:arial;
           font-weight: bold;
           font-size: 20px;
+          }
+          .center {
+          display: block;
+          /*margin-left: 3%;
+          margin-right: auto;*/
+          width: 100%;
+          }
+          .photo {
+          display: block;
+          /*margin-left: 3%;
+          margin-right: auto;*/
+          height : 210px;
+          width : 100%;
           }
 </style>
