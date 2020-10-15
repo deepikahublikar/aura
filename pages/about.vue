@@ -44,11 +44,24 @@
           CNC Plasma Cutting, CNC Straightening, CNC Rolling and Robotic Welding to support
           its multi segmental growth.
         </div>
-        <div
+        <!---<div
           class="textstyle"
-          style="flex-grow: 1;margin-left: 30px;margin-top: 25px;"
+          style="margin-left: 5%;margin-top: 3%; width: 30%"
         >
-          <iframe width="450" height="315" src="https://www.youtube.com/embed/h-YrFdEpSq8"></iframe>
+          <iframe
+          style='height: 80%; width: 120%;'
+          frameborder="0"
+          scrolling="no"
+          onload="resizeIframe(this)"
+          src="https://www.youtube.com/embed/h-YrFdEpSq8"></iframe>
+        </div>-->
+        <div
+        style="margin-left: 5%;margin-top: 3%; width: 30%">
+        <iframe
+        width="460"
+        height="315"
+        src="https://www.youtube.com/embed/h-YrFdEpSq8"
+        frameborder="0"></iframe>
         </div>
       </div>
       <div class="heading">
@@ -185,13 +198,56 @@
         without affecting quality & durability of product directly helping customers reduce
         cost of their products.
       </div>
-      <div class="container" style="display: flex; height: 100%;margin-top: 25px;">
-        <div style="text-align: justify;">
+      <!--<div class="card mb-3" style="max-width: 80%;margin-top: 25px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="~/assets/images/Unmesh.jpg" class="card-img" width="60%">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <h5 class="subtitle">Post</h5>
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit longer.
+            </div>
+          </div>
+        </div>
+      </div>-->
+        <v-container class="grey lighten-5">
+        <v-row no-gutters>
+          <v-col
+            cols="10"
+            sm="6"
+            md="3"
+          >
+            <v-card
+              class="pa-2"
+            >
+              <img src="~/assets/images/Unmesh.jpg" class="card-img" width="60%">
+            </v-card>
+          </v-col>
+          <v-col
+            cols="6"
+            md="9"
+          >
+            <v-card
+              class="pa-16"
+            >
+              B.E. (Mech) from NIT Durgapur.
+              35 years of experience in Mechanical Production Engineering,Engineering Materials.
+              One of the pioneer in Laser Cutting industry in India.
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+      <!--<div class="container" style="display: flex; height: 100%;margin-top: 25px;">
+        <div class="col-md-8" style="text-align: justify;">
           <v-card
-            max-width="400"
+            max-width="800"
+            class="col-md-8"
           >
             <v-row
-              class="py-4 pl-4"
+             class="py-4 pl-4"
             >
             <v-col>
             <v-img
@@ -215,129 +271,33 @@
         </div>
         <div
           class="textstyle"
-          style="margin-left: 5%;"
+          style="margin-left: 5%;text-align: justify;"
         >
           <v-card
             class="mx-auto"
-            width="250"
+            max-width="600"
           >
-            <v-img
-              class="photo"
-              :src="require('~/assets/images/Unmesh.jpg')"
-            ></v-img>
-            <v-card-title>
-              Abhay Paranjpe
-            </v-card-title>
-            <v-card-subtitle>
-              Board of Director.
-            </v-card-subtitle>
-            <v-card-text>
-              B.E. (Mech) from NIT Durgapur.
-              35 years of experience in Mechanical / Production Engineering,
-              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-            </v-card-text>
-          </v-card>
-        </div>
-        <div
-          class="textstyle"
-          style="margin-left: 5%;"
-        >
-          <v-card
-            class="mx-auto"
-            width="250"
-          >
-            <v-img
-              class="photo"
-              :src="require('~/assets/images/Unmesh.jpg')"
-            ></v-img>
-            <v-card-title>
-              Ananya Mahajani
-            </v-card-title>
-            <v-card-subtitle>
-              Board of Director.
-            </v-card-subtitle>
-            <v-card-text>
-              B.E. (Mech) from NIT Durgapur.
-              35 years of experience in Mechanical / Production Engineering,
-              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-            </v-card-text>
-          </v-card>
-        </div>
-        <div
-          class="textstyle"
-          style="margin-left: 5%;"
-        >
-          <v-card
-            class="mx-auto"
-            width="250"
-          >
-            <v-img
-              class="photo"
-              :src="require('~/assets/images/Unmesh.jpg')"
-            ></v-img>
-            <v-card-title>
-              Vivek Peshwe
-            </v-card-title>
-            <v-card-subtitle>
-              Board of Director.
-            </v-card-subtitle>
-            <v-card-text>
-              B.E. (Mech) from NIT Durgapur.
-              35 years of experience in Mechanical / Production Engineering,
-              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-            </v-card-text>
-          </v-card>
-        </div>
-      </div>
-      <!--<div class="container" style="display: flex; height: 100%;margin-top: 25px;">
-        <div
-          class="textstyle"
-          style="width: 20%; text-align: justify;"
-        >
-          <v-card
-            class="mx-auto"
-            width="250"
-          >
-            <v-img
-              class="photo"
-              :src="require('~/assets/images/Unmesh.jpg')"
-            ></v-img>
-            <v-card-title>
-              Unmesh Mahajani
-            </v-card-title>
-            <v-card-subtitle>
-              Board of Director.
-            </v-card-subtitle>
-            <v-card-text>
-              B.E. (Mech) from NIT Durgapur.
-              35 years of experience in Mechanical/Production Engineering,
-              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-            </v-card-text>
-          </v-card>
-        </div>
-        <div
-          class="textstyle"
-          style="margin-left: 5%;"
-        >
-          <v-card
-            class="mx-auto"
-            width="250"
-          >
-            <v-img
-              class="photo"
-              :src="require('~/assets/images/Unmesh.jpg')"
-            ></v-img>
-            <v-card-title>
-              Abhay Paranjpe
-            </v-card-title>
-            <v-card-subtitle>
-              Board of Director.
-            </v-card-subtitle>
-            <v-card-text>
-              B.E. (Mech) from NIT Durgapur.
-              35 years of experience in Mechanical / Production Engineering,
-              Engineering Materials.One of the pioneer in Laser Cutting industry in India.
-            </v-card-text>
+            <v-row
+             class="py-4 pl-4"
+            >
+              <v-col>
+                <v-img
+                  class="photo"
+                  :src="require('~/assets/images/Unmesh.jpg')"
+                ></v-img>
+                <v-card-title>
+                  Abhay Paranjpe
+                </v-card-title>
+                <v-card-subtitle>
+                  Board of Director.
+                </v-card-subtitle>
+                <v-card-text>
+                  B.E. (Mech) from NIT Durgapur.
+                  35 years of experience in Mechanical / Production Engineering,
+                  Engineering Materials.One of the pioneer in Laser Cutting industry in India.
+                </v-card-text>
+              </v-col>
+            </v-row>
           </v-card>
         </div>
         <div
@@ -403,7 +363,6 @@ export default {
   head () {
     return { title: 'About' }
   }
-
 }
 </script>
 <style>
@@ -427,7 +386,7 @@ export default {
           .largefont {
           font-family:arial;
           font-weight: bold;
-          font-size: 20px;
+          font-size: 100%;
           }
           .center {
           display: block;
@@ -446,5 +405,13 @@ export default {
           /*min-height: 100px;
           min-width: 100px;
           padding: 100px;*/
+          }
+          .iframe-container iframe {
+          border: 0;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
           }
 </style>
